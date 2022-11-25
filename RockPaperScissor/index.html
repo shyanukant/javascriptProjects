@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: aqua;
+            background-color:rgba(0, 0, 0, 0.864) ;
+        }
+        h4{
+            margin: 0;
+            padding-bottom: 2vh;
+        }
+        #container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #rock, #paper, #scissor {
+            width: 14vw;
+            height: 14vw;
+            margin: 2vw;
+            font-size: 7vw;
+        }
+        button:hover{
+            background-color: rgb(192, 162, 255);
+        }
+
+    </style>
+   
+</head>
+
+<body>
+    <h4 >Rock, Paper , Scissor</h3>
+    <h4 >Human👨‍🦱 vs Computer🤖</h3>
+    <div id="container">
+        <button class = "game" id="rock" value="Rock" >🧱</button>
+        <button class = "game" id="paper" value="Paper">📃</button>
+        <button class = "game" id="scissor" value="Scissor">✂</button>
+    </div>
+    <h5 id="result"></h5>
+    <button id="exit-game">❌</button>
+    <script src="index.js"></script>
+</body>
+
+</html>

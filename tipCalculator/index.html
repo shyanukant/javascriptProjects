@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(142, 61, 255);
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 80vh;
+            background-color: rgb(39, 33, 48);
+            /* position: relative; */
+            color: wheat;
+            border-radius: 10px;
+        }
+        .billTip{
+            margin: 10px;
+
+        }
+        
+        input{
+            margin-left: 2px;
+            padding-left: 5px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+
+        }
+        #total {
+            display: flex;
+            padding: 15px;
+
+        }
+
+        button {
+            border: 1px;
+            border-radius: 50%;
+            background-color: rgb(142, 61, 255);
+            color: antiquewhite;
+        }
+        #person{
+            width: 90px;
+
+        }
+        #totalbill{
+            width: 80px;
+            text-align: end;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <div class="billTip">
+                <div>Bill</div>
+                <input type="text" id="bill" placeholder="$1.00" part="">
+            </div>
+            <div class="billTip">
+                <div>Tip</div>
+                <input type="text" id="tip"placeholder="5%">
+            </div>
+        <div>
+        <div id="total">
+            <div id="person">
+                <h6>People</h6>
+                <button id="minus">-</button><span id="number">1</span><button id="plus">+</button>
+            </div>
+            <div id="totalbill">
+                <h6>Total Per Person</h6>
+                <h6 id="payAmount">$0</h6>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
