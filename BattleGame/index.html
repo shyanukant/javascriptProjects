@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Battle Game</title>
+</head>
+
+<body>
+    <main>
+        <div id="container">
+            <div class="player">
+                <h3 id="player1">Player 1</h3>
+                <img src="person1.gif" alt="" >
+                <div class="key">F :
+                    <span id="attack">Attack</span>
+                </div>
+                <div class="key">H :
+                    <span id="heal">Heal</span>
+                </div>
+                <div class="point" id="p1Health">100</div>
+            </div>
+            <button id="simulate">simulate</button>
+            <div class="player">
+                <h3 id="player2">Player 2</h3>
+                <img src="person2.gif" alt="" style="transform: scaleX(-1);">
+                <div class="key">A :
+                    <span id="attack">Attack</span>
+                </div>
+                <div class="key">P :
+                    <span id="heal">Heal</span>
+                </div>
+                <div class="point" id="p2Health">100</div>
+            </div>
+        </div>
+        <div id="reset">
+            <img id="winImg" src="winner.gif" alt="">
+            <div id="result"></div>
+            <button type="reset">Reset</button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
